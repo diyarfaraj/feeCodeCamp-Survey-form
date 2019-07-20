@@ -15,16 +15,33 @@
       </p>
       <form action="" id="survey-form">
         <div class="rowTab">
-          <label id="name-label"> Name </label>
-          <input type="text" id="name" placeholder="Your Name here" />
-        </div>
-        <div class="rowTab">
-          <label id="email-label"> Email</label>
-          <input type="email" id="email" placeholder="Your Email here" />
-        </div>
-        <div class="rowTab">
-          <label id="number-label">Your age</label>
+          <div class="labels">
+            <label id="name-label"> Name </label>
+          </div>
           <input
+            class="input-field"
+            type="text"
+            id="name"
+            placeholder="Your Name here"
+          />
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="email-label"> Email</label>
+          </div>
+          <input
+            class="input-field"
+            type="email"
+            id="email"
+            placeholder="Your Email here"
+          />
+        </div>
+        <div class="rowTab">
+          <div class="labels">
+            <label id="number-label">Age</label>
+          </div>
+          <input
+            class="input-field"
             type="number"
             min="18"
             max="55"
@@ -48,19 +65,23 @@
             </select>
           </div>
         </div>
-        <div>
-          <label for="">Would you recommend us?</label>
-        </div>
-        <div>
-          <ul style="list-style: none">
-            <li class="radio"><input type="radio" name="" id="" /> Fur sure</li>
-            <li class="radio"><input type="radio" name="" id="" /> Yes!</li>
-            <li class="radio"><input type="radio" name="" id="" /> Maybe</li>
-          </ul>
+        <div class="rowTab">
+          <div>
+            <label for="">Would you recommend us?</label>
+          </div>
+          <div class="rightTab">
+            <ul style="list-style: none">
+              <li class="radio">
+                <input type="radio" name="" id="" /> Fur sure
+              </li>
+              <li class="radio"><input type="radio" name="" id="" /> Yes!</li>
+              <li class="radio"><input type="radio" name="" id="" /> Maybe</li>
+            </ul>
+          </div>
         </div>
 
-        <div>
-          <div>
+        <div class="rowTab">
+          <div class="labels">
             <label for="">
               What do you like most in FCC?
             </label>
@@ -74,11 +95,11 @@
           </div>
         </div>
 
-        <div>
-          <div>
+        <div class="rowTab">
+          <div class="labels">
             <label for="">Things to improve in FCC?</label>
           </div>
-          <div>
+          <div class="rightTab">
             <ul style="list-style: none">
               <li>
                 <lable> <input type="checkbox" name="" id="" />Frontend </lable>
@@ -104,7 +125,7 @@
           </div>
         </div>
 
-        <div>
+        <div class="rowTab">
           <div class="labels">
             <label for="comments"> Any comments or suggestions</label>
           </div>
@@ -118,6 +139,8 @@
             ></textarea>
           </div>
         </div>
+
+        <button id="submit" type="submit">Submit</button>
       </form>
     </div>
   </body>
